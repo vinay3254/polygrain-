@@ -1,0 +1,3 @@
+.lk-control-bar,.lk-agent-control-bar{display:flex;gap:.5rem;align-items:center;justify-content:center;padding:.75rem;border-top:1px solid var(--lk-border-color);max-height:var(--lk-control-bar-height)}.lk-agent-control-bar{height:var(--lk-control-bar-height);--lk-bg: transparent;--lk-va-bar-width: 2px;--lk-va-bar-gap: 4px;--lk-va-bar-border-radius: 1px}.lk-agent-control-bar .lk-audio-bar-visualizer .lk-audio-bar.lk-highlighted{filter:none}
+
+/*# sourceMappingURL=control-bar.css.map */

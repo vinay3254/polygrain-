@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #090B0B;
+  --color-app-bg: #090B0B;
+  --color-surface: rgba(18, 18, 22, 0.85);
+  --color-card: rgba(16, 16, 20, 0.80);
+  --color-primary: #D4B571;
+  --color-secondary: #D4B571;
+  --color-input: rgba(255,255,255,0.05);
+  --color-tag: rgba(212, 181, 113, 0.12);
+  --color-ai: #D4B571;
+  --color-danger: #EF4444;
+  --dazzle-accent: #D4B571;
+  --dazzle-accent-soft: rgba(212, 181, 113, 0.15);
+  --gradient-cta: linear-gradient(135deg, #D4B571 0%, #6F5115 100%);
+  --gradient-bg: linear-gradient(180deg, rgba(9,11,11,0.9) 0%, rgba(9,11,11,0.95) 100%);
+  --gold-glow: 0 0 24px rgba(212,181,113,0.25), 0 0 8px rgba(212,181,113,0.15);
+  --card-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 1px 0 rgba(212,181,113,0.12) inset;
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #090B0B;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #090B0B;
+  background-image: none;
+  color: #E0E0E0;
+  letter-spacing: -0.01em;
+}
+
+#root {
+  min-height: 100dvh;
+  background: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: #D4B571;
+  letter-spacing: -0.03em;
+}
+
+input, button, select, textarea {
+  font-family: var(--font-body);
+}
+
+::selection {
+  background: rgba(212, 181, 113, 0.3);
+  color: #fff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@layer utilities {
+  .glass {
+    background: var(--color-card);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(212, 181, 113, 0.1);
+  }
+
+  .glass-card {
+    background: var(--color-card);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(212, 181, 113, 0.2);
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, #D4B571 0%, #D4B571 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .gradient-border {
+    border-image: linear-gradient(90deg, #D4B571 0%, #D4B571 100%) 1;
+  }
+
+  .animate-gradient {
+    animation: gradient-shift 8s ease infinite;
+  }
+  
+  /* Color utilities for BottomBar / General */
+  .bg-app-primary {
+    background-color: var(--color-primary);
+  }
+  
+  .bg-app-surface {
+    background-color: var(--color-surface);
+  }
+  
+  .bg-app-danger {
+    background-color: var(--color-danger);
+  }
+  
+  .text-app-primary {
+    color: var(--color-primary);
+  }
+  
+  .text-app-secondary {
+    color: var(--color-secondary);
+  }
+  
+  .text-app-danger {
+    color: var(--color-danger);
+  }
+  
+  .border-app-primary {
+    border-color: var(--color-primary);
+  }
+  
+  .border-app-danger {
+    border-color: var(--color-danger);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer utilities {
+  .glass-premium {
+    background: var(--color-surface);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(212, 181, 113, 0.15); /* Gold divider line */
+  }
+
+  .glass-card-hover {
+    transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+
+  .glass-card-hover:hover {
+    border-color: rgba(212, 181, 113, 0.4);
+    box-shadow: 0 0 30px rgba(212, 181, 113, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .text-gradient-primary {
+    background: linear-gradient(90deg, #D4B571 0%, #6F5115 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .btn-gradient-primary {
+    background: var(--gradient-cta);
+    background-size: 200% 200%;
+    color: #FFFFFF !important;
+    border: none;
+    transition: background-position 0.3s, box-shadow 0.3s, transform 0.1s;
+  }
+
+  .btn-gradient-primary:hover {
+    background-position: right center;
+    box-shadow: 0 0 40px rgba(212, 181, 113, 0.5), 0 0 80px rgba(111, 81, 21, 0.2);
+  }
+
+  .orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(80px);
+    pointer-events: none;
+  }
+
+  .etherx-glass {
+    background: var(--gradient-bg);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(212, 181, 113, 0.1);
+    box-shadow:
+      0 22px 60px rgba(9, 11, 11, 0.5),
+      inset 0 1px 0 rgba(212, 181, 113, 0.15),
+      inset 0 -1px 0 rgba(212, 181, 113, 0.05);
+  }
+
+  .etherx-glass-soft {
+    background: var(--color-surface);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border: 1px solid rgba(212, 181, 113, 0.08);
+    box-shadow:
+      0 18px 40px rgba(9, 11, 11, 0.3),
+      inset 0 1px 0 rgba(212, 181, 113, 0.1);
+  }
+
+  .etherx-noise {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.1'/%3E%3C/svg%3E");
+    mix-blend-mode: overlay;
+  }
+
+  .etherx-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(212, 181, 113, 0.35) transparent;
+  }
+
+  .etherx-scrollbar::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  .etherx-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .etherx-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background: linear-gradient(180deg, rgba(212, 181, 113, 0.5), rgba(212, 181, 113, 0.3));
+  }
+
+  .etherx-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(212, 181, 113, 0.72), rgba(212, 181, 113, 0.48));
+  }
+}
+
+@keyframes etherx-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(212, 181, 113, 0.18);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(212, 181, 113, 0.02);
+  }
+}
+
+/* Override Tailwind white with warm gold-cream for better contrast */
+.text-white {
+  color: #D4B571 !important;
+}

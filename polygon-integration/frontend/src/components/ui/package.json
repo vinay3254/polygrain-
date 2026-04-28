@@ -1,0 +1,34 @@
+{
+  "name": "etherxmeet-ui-components",
+  "version": "1.0.0",
+  "description": "Glassmorphic UI components library for EtherXMeet",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "framer-motion": "^11.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "glassmorphic",
+    "framer-motion",
+    "tailwind",
+    "etherxmeet"
+  ],
+  "author": "EtherXMeet",
+  "license": "MIT"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"floating-menu.d.ts","sourceRoot":"","sources":["../../src/helper/floating-menu.ts"],"names":[],"mappings":"AAEA,wBAAgB,mBAAmB,CACjC,MAAM,EAAE,WAAW,EACnB,IAAI,EAAE,WAAW,EACjB,QAAQ,CAAC,EAAE,CAAC,CAAC,EAAE,MAAM,EAAE,CAAC,EAAE,MAAM,KAAK,IAAI,GACxC,MAAM,IAAI,CAUZ;AAED,wBAAgB,eAAe,CAAC,aAAa,EAAE,WAAW,EAAE,KAAK,EAAE,UAAU,GAAG,OAAO,CAGtF"}

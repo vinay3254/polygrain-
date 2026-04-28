@@ -1,0 +1,148 @@
+.aurora-root {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* ── Glowing orbs ─────────────────────────────────────────────── */
+.aurora-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.55;
+  mix-blend-mode: screen;
+  will-change: transform;
+}
+
+.aurora-orb-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #D4B571 0%, #6F5115 55%, transparent 80%);
+  top: -10%;
+  left: -10%;
+  animation: orb1 18s ease-in-out infinite;
+}
+
+.aurora-orb-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #C9943A 0%, #3D2800 60%, transparent 80%);
+  bottom: -15%;
+  right: -10%;
+  animation: orb2 22s ease-in-out infinite;
+}
+
+.aurora-orb-3 {
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, #E8C46A 0%, #8B6010 55%, transparent 80%);
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: orb3 16s ease-in-out infinite;
+}
+
+.aurora-orb-4 {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, #B8923A 0%, #4A3000 60%, transparent 80%);
+  top: 10%;
+  right: 15%;
+  animation: orb4 20s ease-in-out infinite;
+}
+
+.aurora-orb-5 {
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, #D4B571 0%, #6F5115 50%, transparent 80%);
+  bottom: 20%;
+  left: 15%;
+  animation: orb5 14s ease-in-out infinite;
+}
+
+/* ── Aurora wave bands ────────────────────────────────────────── */
+.aurora-band {
+  position: absolute;
+  left: -20%;
+  width: 140%;
+  filter: blur(60px);
+  opacity: 0.18;
+  mix-blend-mode: screen;
+  border-radius: 50%;
+}
+
+.aurora-band-1 {
+  height: 220px;
+  top: 20%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    #6F5115 20%,
+    #D4B571 40%,
+    #C9943A 60%,
+    #6F5115 80%,
+    transparent 100%
+  );
+  animation: band1 12s ease-in-out infinite;
+}
+
+.aurora-band-2 {
+  height: 180px;
+  top: 55%;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    #3D2800 15%,
+    #B8923A 35%,
+    #D4B571 55%,
+    #8B6010 75%,
+    transparent 100%
+  );
+  animation: band2 17s ease-in-out infinite reverse;
+}
+
+/* ── Keyframes ────────────────────────────────────────────────── */
+@keyframes orb1 {
+  0%,100% { transform: translate(0,   0)   scale(1);    }
+  25%      { transform: translate(120px, 80px)  scale(1.15); }
+  50%      { transform: translate(60px,  160px) scale(0.9);  }
+  75%      { transform: translate(-40px, 60px)  scale(1.05); }
+}
+
+@keyframes orb2 {
+  0%,100% { transform: translate(0,   0)    scale(1);    }
+  30%      { transform: translate(-100px, -70px) scale(1.2);  }
+  60%      { transform: translate(-50px,  -140px) scale(0.85); }
+  80%      { transform: translate(30px,  -50px)  scale(1.1);  }
+}
+
+@keyframes orb3 {
+  0%,100% { transform: translateX(-50%) translateY(0)    scale(1);   }
+  33%      { transform: translateX(-40%) translateY(-80px) scale(1.1); }
+  66%      { transform: translateX(-60%) translateY(60px)  scale(0.9); }
+}
+
+@keyframes orb4 {
+  0%,100% { transform: translate(0, 0)   scale(1);   }
+  40%      { transform: translate(-80px, 100px) scale(1.15); }
+  70%      { transform: translate(40px,  60px)  scale(0.95); }
+}
+
+@keyframes orb5 {
+  0%,100% { transform: translate(0, 0)  scale(1);   }
+  35%      { transform: translate(70px, -90px) scale(1.2);  }
+  65%      { transform: translate(-30px, -40px) scale(0.9); }
+}
+
+@keyframes band1 {
+  0%,100% { transform: translateY(0)    scaleX(1);    opacity: 0.18; }
+  50%      { transform: translateY(-40px) scaleX(1.05); opacity: 0.28; }
+}
+
+@keyframes band2 {
+  0%,100% { transform: translateY(0)   scaleX(1);    opacity: 0.18; }
+  50%      { transform: translateY(50px) scaleX(0.95); opacity: 0.25; }
+}

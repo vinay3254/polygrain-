@@ -1,0 +1,106 @@
+/* Dashboard Custom Styles */
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(212, 181, 113, 0.5);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 181, 113, 0.7);
+}
+
+/* Glass Card Effect */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Text Gradient */
+.text-gradient {
+  background: linear-gradient(135deg, #D4B571 0%, #6F5115 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Grid Pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* App Color Variables */
+:root {
+  --app-bg: #0a0a0f;
+  --app-surface: #1a1a2e;
+  --app-border: rgba(255, 255, 255, 0.1);
+  --app-primary: #D4B571;
+  --app-accent: #6F5115;
+}
+
+.bg-app-bg {
+  background-color: var(--app-bg);
+}
+
+.bg-app-surface {
+  background-color: var(--app-surface);
+}
+
+.border-app-border {
+  border-color: var(--app-border);
+}
+
+.text-app-primary {
+  color: var(--app-primary);
+}
+
+.text-app-accent {
+  color: var(--app-accent);
+}
+
+.bg-app-primary {
+  background-color: var(--app-primary);
+}
+
+.bg-app-accent {
+  background-color: var(--app-accent);
+}
+
+/* Hover Effects */
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.4);
+}
+
+/* Line Clamp Utilities */
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Font Families */
+.font-syne {
+  font-family: 'Syne', sans-serif;
+}

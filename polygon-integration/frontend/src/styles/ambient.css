@@ -1,0 +1,198 @@
+/* frontend/src/styles/ambient.css */
+/* ============================================================
+   AMBIENT SYSTEM — Aurora · Grain · Shimmer · Cursor
+   All gold-toned to match EtherX brand identity.
+   ============================================================ */
+
+/* ── Page-level grain overlay ───────────────────────────────── */
+/* Sits between Three.js canvas (z-index: -1) and app UI (z-index: 2+) */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.045'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+  opacity: 1;
+}
+
+/* ── Aurora background ─────────────────────────────────────── */
+.aurora-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  --aurora-opacity-base: 0.13;
+  --aurora-opacity-peak: 0.20;
+  --aurora-opacity-mid:  0.16;
+}
+
+.aurora-bg.aurora-subtle {
+  --aurora-opacity-base: 0.05;
+  --aurora-opacity-peak: 0.08;
+  --aurora-opacity-mid:  0.06;
+}
+
+@keyframes aurora-drift {
+  0%   { opacity: var(--aurora-opacity-base, 0.13); transform: scale(1)    rotate(0deg)   translateZ(0); }
+  33%  { opacity: var(--aurora-opacity-peak, 0.20); transform: scale(1.06) rotate(3deg)   translateZ(0); }
+  66%  { opacity: var(--aurora-opacity-mid,  0.16); transform: scale(0.97) rotate(-1.5deg) translateZ(0); }
+  100% { opacity: var(--aurora-opacity-base, 0.13); transform: scale(1)    rotate(0deg)   translateZ(0); }
+}
+
+@keyframes aurora-drift-slow {
+  0%   { opacity: var(--aurora-opacity-base, 0.13); transform: scale(1)    rotate(0deg)  translateZ(0); }
+  50%  { opacity: var(--aurora-opacity-peak, 0.20); transform: scale(1.04) rotate(-2deg) translateZ(0); }
+  100% { opacity: var(--aurora-opacity-base, 0.13); transform: scale(1)    rotate(0deg)  translateZ(0); }
+}
+
+.aurora-bg::before {
+  content: '';
+  position: absolute;
+  width: 65vw;
+  height: 65vw;
+  border-radius: 50%;
+  filter: blur(90px);
+  top: -25%;
+  left: -12%;
+  /* warm amber — top-left */
+  background: radial-gradient(circle, rgba(201,138,30,0.28) 0%, rgba(212,181,113,0.12) 40%, transparent 70%);
+  animation: aurora-drift 14s ease-in-out infinite alternate;
+}
+
+.aurora-bg::after {
+  content: '';
+  position: absolute;
+  width: 55vw;
+  height: 55vw;
+  border-radius: 50%;
+  filter: blur(80px);
+  bottom: -18%;
+  right: -8%;
+  /* deep bronze — bottom-right */
+  background: radial-gradient(circle, rgba(180,110,20,0.22) 0%, rgba(111,81,21,0.10) 40%, transparent 70%);
+  animation: aurora-drift-slow 18s ease-in-out infinite alternate;
+  animation-delay: -8s;
+}
+
+/* Third accent orb — subtle cool-gold mid-screen */
+.aurora-bg .aurora-mid {
+  position: absolute;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  filter: blur(100px);
+  top: 30%;
+  right: 20%;
+  background: radial-gradient(circle, rgba(212,181,113,0.10) 0%, transparent 60%);
+  animation: aurora-drift 20s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+
+/* ── Glassmorphism shimmer sweep ────────────────────────────── */
+.shimmer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(212, 181, 113, 0.07) 45%,
+    rgba(255, 255, 255, 0.04) 50%,
+    transparent 100%
+  );
+  transform: skewX(-22deg);
+  transition: left 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.shimmer-card:hover::after {
+  left: 150%;
+}
+
+/* ── Gold glow border on focus elements ─────────────────────── */
+.gold-focus:focus-within {
+  border-color: rgba(212, 181, 113, 0.7) !important;
+  box-shadow: 0 0 0 3px rgba(212, 181, 113, 0.12), 0 0 20px rgba(212, 181, 113, 0.08) !important;
+}
+
+
+/* ── Custom cursor ──────────────────────────────────────────── */
+#cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #D4B571;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.12s, height 0.12s, background 0.12s, opacity 0.12s;
+  will-change: transform;
+}
+
+#cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(212, 181, 113, 0.5);
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.18s cubic-bezier(0.34,1.56,0.64,1),
+              height 0.18s cubic-bezier(0.34,1.56,0.64,1),
+              border-color 0.18s,
+              box-shadow 0.18s;
+  will-change: transform;
+}
+
+/* Hover expansion */
+#cursor-ring.is-hovering {
+  width: 38px;
+  height: 38px;
+  border-color: rgba(212, 181, 113, 0.85);
+  box-shadow: 0 0 14px rgba(212, 181, 113, 0.35), 0 0 4px rgba(212,181,113,0.2);
+}
+
+/* Click state */
+#cursor-dot.is-clicking {
+  width: 8px;
+  height: 8px;
+  background: #D4B571;
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .aurora-bg::before,
+  .aurora-bg::after,
+  .aurora-bg .aurora-mid {
+    animation: none;
+    opacity: 0.07;
+  }
+  .shimmer-card::after {
+    display: none;
+  }
+  #cursor-dot,
+  #cursor-ring {
+    display: none;
+  }
+  body::after {
+    display: none;
+  }
+}

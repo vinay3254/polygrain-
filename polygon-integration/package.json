@@ -1,0 +1,20 @@
+{
+  "name": "etherxmeet-contracts",
+  "version": "1.0.0",
+  "description": "EtherXMeet smart contracts — Polygon blockchain integration",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test:contracts": "hardhat test",
+    "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
+    "deploy:polygon": "hardhat run scripts/deploy.js --network polygon",
+    "verify:mumbai": "hardhat verify --network mumbai"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.6.1",
+    "hardhat": "^2.28.6"
+  }
+}

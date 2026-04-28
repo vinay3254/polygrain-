@@ -1,0 +1,28 @@
+
+> etherxmeet@1.0.0 dev
+> vite
+
+
+  [32m[1mVITE[22m v8.0.7[39m  [2mready in [0m[1m799[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m9:56:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/layout/TopBar.jsx[22m
+[2m10:00:06 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Recordings.jsx[22m
+[2m6:17:58 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Room.jsx[22m
+[2m6:18:59 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/context/MeetingContext.jsx[22m
+[2m6:19:23 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/context/MeetingContext.jsx[22m
+[2m6:19:42 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/context/MeetingContext.jsx[22m
+[2m6:21:20 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Room.jsx[22m
+[2m6:27:45 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m6:29:42 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m6:29:42 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+[2m6:29:42 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m6:41:32 am[22m [36m[1m[vite][22m[39m [32m.env changed, restarting server...[39m
+[2m6:41:32 am[22m [36m[1m[vite][22m[39m server restarted.
+[2m6:54:03 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/styles/room.css[22m
+[2m6:54:19 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Room.jsx[22m
+[2m7:00:29 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/Room.jsx[22m
+[2m7:25:00 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/ChainBadge.jsx[22m
+[2m7:25:25 am[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/ChainBadge.jsx[22m

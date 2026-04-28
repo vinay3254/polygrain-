@@ -1,0 +1,54 @@
+
+> etherxmeet-backend@1.0.0 dev
+> nodemon src/index.js
+
+[33m[nodemon] 3.1.14[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,cjs,json[39m
+[32m[nodemon] starting `node src/index.js`[39m
+◇ injected env (9) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+MongoDB connected: localhost
+EtherXMeet backend running on http://localhost:5000
+[0mGET /api/auth/google [36m302[0m 2.757 ms - 0[0m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+◇ injected env (9) from .env // tip: ⌘ override existing { override: true }
+MongoDB connected: localhost
+EtherXMeet backend running on http://localhost:5000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+◇ injected env (9) from .env // tip: ⌘ override existing { override: true }
+MongoDB connected: localhost
+EtherXMeet backend running on http://localhost:5000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+◇ injected env (9) from .env // tip: ⌘ custom filepath { path: '/custom/path/.env' }
+MongoDB connected: localhost
+EtherXMeet backend running on http://localhost:5000
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node src/index.js`[39m
+◇ injected env (9) from .env // tip: ⌘ multiple files { path: ['.env.local', '.env'] }
+MongoDB connected: localhost
+EtherXMeet backend running on http://localhost:5000
+[0mGET /api/auth/google [36m302[0m 7.942 ms - 0[0m
+[0mGET /api/auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E9ANwh2QeVpyMOmULbuGSDr_lgkq8TRO82sVenh8lsTalurQJSYyWxgMyKF9kPfAQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none [36m302[0m 639.090 ms - 303[0m
+[0mGET /api/auth/me [36m304[0m 26.174 ms - -[0m
+[0mGET /api/auth/me [36m304[0m 8.856 ms - -[0m
+[0mGET /api/auth/google [36m302[0m 1.185 ms - 0[0m
+[0mGET /api/auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E8bnsLDUlmx8dJnE0yo7RdH28zLJVVtZ6BU835nGLee9rvwGm7HvEIa9SEZM5I71Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 689.878 ms - 303[0m
+[0mGET /api/auth/me [36m304[0m 9.899 ms - -[0m
+[0mGET /api/auth/me [36m304[0m 8.434 ms - -[0m
+[0mGET /api/auth/google [36m302[0m 1.580 ms - 0[0m
+[0mGET /api/auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E_Hggnj2HyF2n35oexz6kRmwgIkGZmDxoleaSBRHU32-E14t7P81TikkVaEF3bpGg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 441.021 ms - 303[0m
+[0mGET /api/auth/me [36m304[0m 7.451 ms - -[0m
+[0mGET /api/auth/me [36m304[0m 8.857 ms - -[0m
+[0mGET /api/auth/google [36m302[0m 1.199 ms - 0[0m
+[0mGET /api/auth/google/callback?iss=https%3A%2F%2Faccounts.google.com&code=4%2F0Aci98E_-j9NMhbBu_oVyIJk2M4z_9Gj4v3-BT199rM7KCcF-rXcaZmW4bihRx11vS-bNxA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 512.609 ms - 303[0m
+[0mGET /api/auth/me [36m304[0m 5.923 ms - -[0m
+[0mGET /api/auth/me [36m304[0m 6.877 ms - -[0m
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

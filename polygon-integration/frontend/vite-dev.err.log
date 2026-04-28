@@ -1,0 +1,105 @@
+[2m9:27:12 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[2m9:27:12 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[2m9:28:09 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError accessing media devices: NotAllowedError: Permission denied
+[2m9:28:09 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError accessing media devices: NotAllowedError: Permission denied
+[2m9:28:36 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError accessing media devices: NotAllowedError: Permission denied
+[2m9:28:37 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22mError accessing media devices: NotAllowedError: Permission denied
+[2m9:35:46 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/Landing.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m9:45:07 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/Room.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m9:46:02 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "../styles/room.css" from "src/pages/Room.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Admin/nexmeet/src/pages/Room.jsx[39m:3:7
+[33m  1  |  import { useEffect, useMemo, useState } from "react";
+  2  |  import { useNavigate, useParams } from "react-router-dom";
+  3  |  import "../styles/room.css";
+     |          ^
+  4  |  var _jsxFileName = "C:/Users/Admin/nexmeet/src/pages/Room.jsx";
+  5  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";[39m
+[2m9:46:02 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../styles/room.css" from "src/pages/Room.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Admin/nexmeet/src/pages/Room.jsx[39m:3:7
+[33m  1  |  import { useEffect, useMemo, useState } from "react";
+  2  |  import { useNavigate, useParams } from "react-router-dom";
+  3  |  import "../styles/room.css";
+     |          ^
+  4  |  var _jsxFileName = "C:/Users/Admin/nexmeet/src/pages/Room.jsx";
+  5  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";[39m
+      at TransformPluginContext._formatLog (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:30354:39)
+      at TransformPluginContext.error (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:30351:14)
+      at normalizeUrl (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:27633:18)
+      at async file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:27696:30
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:27664:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:30143:14)
+      at async loadAndTransform (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:24468:26)
+[2m9:46:03 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/Room.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m9:46:18 pm[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../styles/room.css" from "src/pages/Room.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Admin/nexmeet/src/pages/Room.jsx[39m:3:7
+[33m  1  |  import { useEffect, useMemo, useState } from "react";
+  2  |  import { useNavigate, useParams } from "react-router-dom";
+  3  |  import "../styles/room.css";
+     |          ^
+  4  |  var _jsxFileName = "C:/Users/Admin/nexmeet/src/pages/Room.jsx";
+  5  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";[39m
+      at TransformPluginContext._formatLog (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:30354:39)
+      at TransformPluginContext.error (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:30351:14)
+      at normalizeUrl (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:27633:18)
+      at async file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:27696:30
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:27664:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:30143:14)
+      at async loadAndTransform (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:24468:26)
+      at async viteTransformMiddleware (file:///C:/Users/Admin/nexmeet/node_modules/vite/dist/node/chunks/node.js:24262:20)
+[2m9:46:18 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "../styles/room.css" from "src/pages/Room.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Admin/nexmeet/src/pages/Room.jsx[39m:3:7
+[33m  1  |  import { useEffect, useMemo, useState } from "react";
+  2  |  import { useNavigate, useParams } from "react-router-dom";
+  3  |  import "../styles/room.css";
+     |          ^
+  4  |  var _jsxFileName = "C:/Users/Admin/nexmeet/src/pages/Room.jsx";
+  5  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";[39m
+[2m9:46:18 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "../styles/room.css" from "src/pages/Room.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Admin/nexmeet/src/pages/Room.jsx[39m:3:7
+[33m  1  |  import { useEffect, useMemo, useState } from "react";
+  2  |  import { useNavigate, useParams } from "react-router-dom";
+  3  |  import "../styles/room.css";
+     |          ^
+  4  |  var _jsxFileName = "C:/Users/Admin/nexmeet/src/pages/Room.jsx";
+  5  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";[39m
+[2m9:46:18 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/Room.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m9:46:18 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "../styles/room.css" from "src/pages/Room.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Admin/nexmeet/src/pages/Room.jsx[39m:3:7
+[33m  1  |  import { useEffect, useMemo, useState } from "react";
+  2  |  import { useNavigate, useParams } from "react-router-dom";
+  3  |  import "../styles/room.css";
+     |          ^
+  4  |  var _jsxFileName = "C:/Users/Admin/nexmeet/src/pages/Room.jsx";
+  5  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";[39m
+[2m9:46:18 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "../styles/room.css" from "src/pages/Room.jsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/Admin/nexmeet/src/pages/Room.jsx[39m:3:7
+[33m  1  |  import { useEffect, useMemo, useState } from "react";
+  2  |  import { useNavigate, useParams } from "react-router-dom";
+  3  |  import "../styles/room.css";
+     |          ^
+  4  |  var _jsxFileName = "C:/Users/Admin/nexmeet/src/pages/Room.jsx";
+  5  |  import { jsxDEV as _jsxDEV } from "react/jsx-dev-runtime";[39m
+[2m10:00:45 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[2m10:00:45 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[2m10:02:17 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mHMS-Store: possible inconsistency detected -  room leave is called when no room is connected
+[2m10:02:18 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[2m10:02:18 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[2m10:02:44 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mHMS-Store: possible inconsistency detected -  room leave is called when no room is connected
+[2m10:02:44 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[2m10:02:44 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[2m10:02:53 pm[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m [2m[console.error] [22m[vite] Failed to reload /src/pages/Room.jsx. This could be due to syntax errors or importing non-existent modules. (see errors above)
+[2m10:04:02 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mHMS-Store: possible inconsistency detected -  room leave is called when no room is connected
+[2m10:04:04 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[2m10:04:04 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
+[2m10:10:37 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22mHMS-Store: possible inconsistency detected -  room leave is called when no room is connected
+[2m10:10:37 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition.
+[2m10:10:37 pm[22m [33m[1m[vite][22m[39m [33m[2m(client)[22m[39m [2m[console.warn] [22m⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath.
